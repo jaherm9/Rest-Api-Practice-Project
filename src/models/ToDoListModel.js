@@ -6,7 +6,9 @@ const DataSchema = mongoose.Schema({
     TodoSubject: {type: String},
     TodoDescription: {type: String},
     TodoStatus: {type: String, default:"New"},
-    TodoDate: {type: String, default: Date.now()}
+    TodoCreateDate: {type: String, default: Date.now()},
+    TodoUpdateDate: {type: String, default: Date.now()},
+
 
 },{versionKey:false});
 
